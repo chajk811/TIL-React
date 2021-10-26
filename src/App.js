@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import CounterContainer from './pages/Counter/CounterContainer';
+import EventContainer from './pages/Event/EventContainer';
 
 function App() {
   return (
     <div className="App">
-      <CounterContainer />
+      {/* <CounterContainer /> */}
+      <EventContainer />
     </div>
   );
 }
