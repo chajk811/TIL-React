@@ -1,13 +1,13 @@
 {
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "prettier.disableLanguages": ["js"],
-  "files.autoSave": "onFocusChange",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [{
+    "mode": "auto"
+  }],
+  "eslint.validate": [
+    "vue", "javascript", "javascriptreact", "typescript", "typescriptreact"
+  ],
 }
+

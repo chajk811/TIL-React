@@ -1,13 +1,13 @@
 import { INCREASE, DECREASE } from './type';
 
 export const increase = () => {
-  return {
-    type: INCREASE,
-  };
+	return {
+		type: INCREASE,
+	};
 };
 
 export const decrease = () => {
-  return {
-    type: DECREASE,
-  };
+	return {
+		type: DECREASE,
+	};
 };

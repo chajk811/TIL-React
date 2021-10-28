@@ -3,8 +3,8 @@ import { createStore, combineReducers } from 'redux';
 import counterReducer from './counter/reducer';
 
 const rootReducer = combineReducers({
-  // global,
-  counter: counterReducer,
+	// global,
+	counter: counterReducer,
 });
 
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
