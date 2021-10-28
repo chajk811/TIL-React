@@ -11,7 +11,7 @@ const CounterContainer = ({ history }) => {
   return (
     <div>
       <button onClick={() => history.goBack()}>뒤로 가기</button>
-      <Counter count={count} onIncrease={onIncrease} onDecrease={onDecrease} />;
+      <Counter count={count} onIncrease={onIncrease} onDecrease={onDecrease} />
     </div>
   );
 };
