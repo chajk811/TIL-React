@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import qs from 'qs';
 import { getEvents } from '../../api/event/EventApi';
 import EventCard from './EventCard';
-import { Link } from 'react-router-dom';
 import './EventList.css';
 
-const EventList = () => {
+const EventList = ({ location }) => {
+	const queryData = qs.parse(location.search, { ignoreQueryPrefix: true });
 	const perPage = 2;
-	const page = 1;
+	const page = parseInt(queryData.page);
 	const [events, setEvents] = useState([]);
 
 	useEffect(() => {
