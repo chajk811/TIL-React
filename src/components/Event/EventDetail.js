@@ -12,14 +12,10 @@ const EventDetail = ({ match }) => {
 				setEvent(data);
 			})
 			.catch(error => console.log('error: ', error));
-	}, []);
+	}, [id]);
 
-	// check
-	// 1. useEffect 2nd	param
-	// 2. 조건부 렌더링 else
-
-	if (event) {
-		return (
+	return (
+		event && (
 			<div>
 				<h1>{event.title}</h1>
 				<p>
@@ -27,10 +23,8 @@ const EventDetail = ({ match }) => {
 				</p>
 				<p>{event.description}</p>
 			</div>
-		);
-	} else {
-		return <div></div>;
-	}
+		)
+	);
 };
 
 export default EventDetail;
