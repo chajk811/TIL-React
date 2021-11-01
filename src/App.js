@@ -1,16 +1,15 @@
 import './App.css';
-import HomeContainer from './pages/Home/HomeContainer';
-import CounterContainer from './pages/Counter/CounterContainer';
-import EventContainer from './pages/Event/EventContainer';
+import * as container from './pages';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className="App">
 			<Switch>
-				<Route path="/" component={HomeContainer} exact />
-				<Route path="/counter" component={CounterContainer} />
-				<Route path="/event" component={EventContainer} />
+				<Route path="/" component={container.HomeContainer} exact />
+				<Route path="/counter" component={container.CounterContainer} />
+				<Route path="/event" component={container.EventContainer} />
+				<Route path="/todo" component={container.TodoContainer} />
 				<Route
 					render={location => (
 						<div>

@@ -4,6 +4,7 @@ import { increase, decrease } from '../../store/counter/actions';
 import { Counter } from '../../components/Counter';
 
 const CounterContainer = ({ history }) => {
+	// use Redux
 	const count = useSelector(state => state.counter).count;
 	const dispatch = useDispatch();
 	const onIncrease = useCallback(() => dispatch(increase()), [dispatch]);

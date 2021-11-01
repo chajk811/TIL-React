@@ -11,6 +11,9 @@ const HomeContainer = () => {
 						<Link to="/counter">Counter</Link>
 					</li>
 					<li>
+						<Link to="/todo">Todo</Link>
+					</li>
+					<li>
 						<Link to="/event">Event List</Link>
 					</li>
 				</ul>
